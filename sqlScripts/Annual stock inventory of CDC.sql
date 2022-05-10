@@ -13,7 +13,7 @@ SELECT S.contract,
        Inventory_Part_In_Stock_Cfp.Get_CF$_Basiccatdescr(S.objkey) Basic_Category_Description
   FROM IFSAPP.INVENTORY_PART_IN_STOCK_UIV S
  Where S.CONTRACT = 'U2CDC'
-      --and S.part_no= '72537A8438'
+       --and S.part_no Like '%'
        
  Group By S.contract,
        S.part_no,
